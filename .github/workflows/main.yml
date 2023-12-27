@@ -1,0 +1,21 @@
+name: Pull Request Check
+
+on:
+  pull_request:
+    branches:
+      - my_branch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Add our validation steps here
+
+      - name: Run Tests
+        run: |
+          print("hello")
+          echo "running tests..."
