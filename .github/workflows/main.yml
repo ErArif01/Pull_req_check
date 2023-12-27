@@ -17,5 +17,4 @@ jobs:
 
       - name: Run Tests
         run: |
-          print("hello")
           echo "running tests..."
